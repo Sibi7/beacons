@@ -41,4 +41,44 @@
       }
     }
   }
+  &__text{
+    position: relative;
+    display: block;
+    float: left;
+    h1{
+      font-size: 46px;
+      color: #fff;
+      font-weight: 900;
+    }
+    p{
+      font-size: 19px;
+      color: #fff;
+      font-weight:700;
+      margin: 50px 0 55px 0;
+    }
+    &-button{
+      width: 240px;
+      height: 50px;
+      border: none;
+      border-radius: 30px;
+      background: #43cb83;
+      color: #fff;
+      font-size: 18px;
+      font-weight:700;
+      outline: none;
+    }
+    &-button-r{
+      height: 50px;
+      width: 185px;
+      border: 2px solid #dde1eb;
+      border-radius: 30px;
+      background: transparent;
+      color: #fff;
+      font-weight:400;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      margin-left: 16px;
+      outline: none;
+    }
+  }
 }
