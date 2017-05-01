@@ -12,6 +12,9 @@
     span{
       color: #43cb83;
     }
+    @include breakpoint(max-width 570px){
+      margin-bottom: 20px;
+    }
   }
   h2{
     color: #282828;
@@ -19,12 +22,18 @@
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 10px;
+    @include breakpoint(max-width 570px){
+      text-align: center;
+    }
   }
   h3{
     color: #43cb83;
     font-size: 30px;
     font-weight: 900;
     margin: 0;
+    @include breakpoint(max-width 570px){
+     text-align: center;
+    }
   }
   ul{
     padding: 0;
@@ -52,9 +61,20 @@
     margin-top: 50px;
     box-shadow: 12px 9px 50px #43cb83;
     margin-bottom: 160px;
+    @include breakpoint(max-width 570px){
+      width: 100%;
+      margin-bottom: 50px;
+    }
   }
   iframe{
-    margin-top: 30px;
+    margin-top: 50px;
     float: right;
+    box-shadow: 0 0 80px #808080;
+    border-radius: 8px;
+    @include breakpoint(max-width 570px){
+      width: 100%;
+      height: 100%;
+      margin-top: 0;
+    }
   }
 }
