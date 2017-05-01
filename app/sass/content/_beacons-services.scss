@@ -1,0 +1,57 @@
+.beacons-services{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  h1{
+    font-size: 36px;
+    color: #282828;
+    margin-top: 80px;
+    font-weight: 700;
+    margin-bottom: 75px;
+    span{
+      color: #43cb83;
+    }
+  }
+  h2{
+    color: #282828;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  h3{
+    color: #43cb83;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+  }
+  ul{
+    padding: 0;
+    padding-left: 16px;
+    margin-top: 30px;
+    li{
+      font-size: 18px;
+      color: #43cb83;
+      line-height: 30px;
+      span{
+        color: #282828;
+      }
+    }
+  }
+  button{
+    background: #43cb83;
+    width: 320px;
+    height: 65px;
+    border-radius: 30px;
+    font-size: 24px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight:700;
+    margin-top: 50px;
+    box-shadow: 12px 9px 50px #43cb83;
+    margin-bottom: 160px;
+
+  }
+}
