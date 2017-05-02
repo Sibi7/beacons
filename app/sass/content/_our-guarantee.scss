@@ -43,5 +43,8 @@
     font-size: 18px;
     color: #282828;
     margin-bottom: 100px;
+    @include breakpoint(max-width 568px){
+      margin-bottom: 50px;
+    }
   }
 }

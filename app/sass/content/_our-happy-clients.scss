@@ -8,8 +8,15 @@
     color: #282828;
     font-weight:700;
     margin-bottom: 45px;
+
     span{
       color: #43cb83;
+    }
+    @include breakpoint(max-width 568px){
+      text-align: center;
+    }
+    @include breakpoint(max-width 770px){
+      text-align: center;
     }
   }
 
@@ -18,6 +25,7 @@
     height: 180px;
     width: 250px;
     margin: 0 auto;
+
     img{
       width: 100%;
       object-fit: cover;
@@ -30,6 +38,7 @@
       width: 100%;
       height: 180px;
       top: 0;
+      transition: 500ms ease;
       button{
         display: block;
         height: 40px;
@@ -63,6 +72,5 @@
     margin-top: 16px;
     color: #4f5362;
   }
-
 
 }

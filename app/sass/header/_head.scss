@@ -40,6 +40,7 @@
             margin: 0 -20px;
             box-sizing: border-box;
             color: #43cb83;
+            transition: 300ms ease;
             font-weight: 900;
             box-shadow: 0 5px 100px #555;
           }
@@ -74,15 +75,22 @@
       color: #fff;
       font-size: 18px;
       font-weight:700;
+      transition: 300ms ease;
       outline: none;
       @include breakpoint(max-width 667px){
         margin-bottom: 30px;
+      }
+      &:hover{
+        transition: 500ms ease;
+        transform: scale(1.1);
+        box-shadow: 0 0 80px #43cb83;
       }
     }
     &-button-r{
       height: 50px;
       width: 185px;
       border: 2px solid #dde1eb;
+      transition: 300ms ease;
       border-radius: 30px;
       background: transparent;
       color: #fff;
@@ -91,6 +99,11 @@
       font-family: 'Montserrat', sans-serif;
       margin-left: 16px;
       outline: none;
+      &:hover{
+        transition: 500ms ease;
+        transform: scale(1.1);
+        box-shadow: 0 0 80px #808080;
+      }
     }
   }
 }

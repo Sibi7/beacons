@@ -49,6 +49,9 @@
     color: #282828;
     text-align: center;
     padding: 0 30px;
+    @include breakpoint(max-width 568px){
+      margin-bottom: 30px;
+    }
   }
   button {
     width: 432px;
@@ -63,5 +66,14 @@
     font-size: 33px;
     display: block;
     box-shadow: 10px 15px 50px #43cb83;
+    @include breakpoint(max-width 568px){
+      width: 100%;
+      font-size: 25px;
+    }
+    &:hover{
+      box-shadow: 10px 15px 50px #43cb83;
+      transition: 500ms ease;
+      transform: scale(1.1);
+    }
   }
 }

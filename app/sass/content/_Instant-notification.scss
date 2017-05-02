@@ -53,5 +53,11 @@
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 91px;
+    transition: 500ms ease;
+    &:hover{
+      box-shadow: 0 0 50px #808080;
+      transition: 500ms ease;
+      transform: scale(1.1);
+    }
   }
 }

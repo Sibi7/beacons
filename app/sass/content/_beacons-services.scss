@@ -59,11 +59,21 @@
     border: none;
     font-weight:700;
     margin-top: 50px;
-    box-shadow: 12px 9px 50px #43cb83;
     margin-bottom: 160px;
+    @include breakpoint(max-width 768px){
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
+    }
     @include breakpoint(max-width 570px){
       width: 100%;
       margin-bottom: 50px;
+    }
+    &:hover{
+      transition: 500ms ease;
+      transform: scale(1.1);
+      box-shadow: 12px 9px 50px #43cb83;
     }
   }
   iframe{
@@ -75,6 +85,13 @@
       width: 100%;
       height: 100%;
       margin-top: 0;
+      margin-bottom: 50px;
     }
+    @include  breakpoint(max-width 770px){
+        float: none;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 50px;
+      }
   }
 }

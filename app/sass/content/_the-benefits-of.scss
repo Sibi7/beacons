@@ -35,11 +35,20 @@
     border: none;
     font-weight:700;
     margin-top: 55px;
-    box-shadow: 12px 9px 50px #43cb83;
+    transition: 500ms ease;
     margin-bottom: 58px;
     @include breakpoint(max-width 570px){
       width: 100%;
       margin-bottom: 50px;
+    }
+    @include breakpoint(max-width 770px){
+      margin: 60px auto;
+      display: block;
+    }
+    &:hover{
+      transition: 500ms ease;
+      transform: scale(1.1);
+      box-shadow: 12px 9px 50px #43cb83;
     }
   }
 }

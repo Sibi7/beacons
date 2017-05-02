@@ -41,10 +41,14 @@
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
+    transition: 500ms ease;
     box-sizing: border-box;
     @include breakpoint(max-width 568px){
       width: 100%;
       margin: 100px 0;
+      button{
+        width: 100%;
+      }
     }
     &:hover{
       transition: 500ms ease;
@@ -59,6 +63,12 @@
     &:hover &-button{
       display: block;
       margin: 0 auto;
+      transition: 500ms ease;
+      &:hover{
+        transform: scale(1.1);
+        transition: 500ms ease;
+        box-shadow: 0 0 50px #aadac1;
+      }
     }
     &-button{
       font-size: 18px;
@@ -70,10 +80,8 @@
       background: #43cb83;
       border-radius: 30px;
       color: #fff;
-      box-shadow: 0 0 50px #aadac1;
+
       display: none;
-
-
     }
     img{
       margin-top: 35px;
@@ -89,6 +97,9 @@
       margin-top: 25px;
       margin-bottom: 30px;
       padding: 0 30px;
+      @include breakpoint(max-width 568px){
+        padding: 0 10px;
+      }
     }
     .title-1{
       color: #ff8f22;
