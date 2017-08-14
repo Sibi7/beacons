@@ -1,5 +1,10 @@
 .idea
+<<<<<<< HEAD
 /node_modules
 gulpfile.js
 node_modules
 package.json
+=======
+node_modules/
+gulpfile.js
+>>>>>>> cf597260b9dea875150093279ab8af2ace3dd773
