@@ -1,11 +1,16 @@
-<<<<<<< HEAD
 .top-banner{
   display: block;
   position: relative;
   float: left;
   width: 100%;
+  @include breakpoint(max-width 440px){
+    height: 168px;
+  }
   img{
     size: 100%;
+    @include breakpoint(max-width 440px){
+      object-fit: cover;
+    }
   }
 }
 
