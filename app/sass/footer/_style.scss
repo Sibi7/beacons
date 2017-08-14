@@ -1,0 +1,50 @@
+.footer{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  background: url("../img/footer-bg.jpg") no-repeat;
+  background-size: cover;
+  &__social{
+    margin-top: 67px;
+    a{
+      display: inline-block;
+      height: 57px;
+      width: 57px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      background: transparent;
+      margin: 0 20px;
+      line-height: 56px;
+      color: #fff;
+      font-size: 26px;
+      @include breakpoint(max-width 568px){
+        margin-bottom: 30px;
+      }
+      &:hover{
+        background: #fff;
+        color: #43cb83;
+        transition: 300ms ease;
+      }
+    }
+  }
+  &__link{
+    a{
+      color: #fff;
+      font-size: 19px;
+      margin: 42px 21px 36px 21px;
+      display: inline-block;
+      @include breakpoint(max-width 568px){
+        margin: 20px 20px;
+      }
+    }
+  }
+  &__fdh{
+    color: #fff;
+
+    margin-bottom: 45px;
+    h1{
+      font-size: 15px;
+    }
+  }
+}

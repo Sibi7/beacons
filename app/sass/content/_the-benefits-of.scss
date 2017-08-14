@@ -1,0 +1,54 @@
+.the-benefits-of{
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  background: url("../img/benefits-bg.jpg") no-repeat top;
+  background-size: cover;
+  h1{
+    font-size: 36px;
+    font-weight:700;
+    margin-top: 85px;
+    margin-bottom: 50px;
+    span{
+      color: #43cb83;
+      
+    }
+  }
+  h2{
+    font-weight: 900;
+    font-size: 24px;
+    color: #282828;
+  }
+  p{
+    font-size: 18px;
+    color: #282828;
+  }
+  button{
+    background: #43cb83;
+    width: 320px;
+    height: 65px;
+    border-radius: 30px;
+    font-size: 24px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight:700;
+    margin-top: 55px;
+    transition: 500ms ease;
+    margin-bottom: 58px;
+    @include breakpoint(max-width 570px){
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    @include breakpoint(max-width 770px){
+      margin: 60px auto;
+      display: block;
+    }
+    &:hover{
+      transition: 500ms ease;
+      transform: scale(1.1);
+      box-shadow: 12px 9px 50px #43cb83;
+    }
+  }
+}

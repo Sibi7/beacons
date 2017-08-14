@@ -1,0 +1,97 @@
+.beacons-services{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  h1{
+    font-size: 36px;
+    color: #282828;
+    margin-top: 80px;
+    font-weight: 700;
+    margin-bottom: 75px;
+    span{
+      color: #43cb83;
+    }
+    @include breakpoint(max-width 570px){
+      margin-bottom: 20px;
+    }
+  }
+  h2{
+    color: #282828;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 10px;
+    @include breakpoint(max-width 570px){
+      text-align: center;
+    }
+  }
+  h3{
+    color: #43cb83;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+    @include breakpoint(max-width 570px){
+     text-align: center;
+    }
+  }
+  ul{
+    padding: 0;
+    padding-left: 16px;
+    margin-top: 30px;
+    li{
+      font-size: 18px;
+      color: #43cb83;
+      line-height: 30px;
+      span{
+        color: #282828;
+      }
+    }
+  }
+  button{
+    background: #43cb83;
+    width: 320px;
+    height: 65px;
+    border-radius: 30px;
+    font-size: 24px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight:700;
+    margin-top: 50px;
+    margin-bottom: 160px;
+    @include breakpoint(max-width 768px){
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
+    }
+    @include breakpoint(max-width 570px){
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    &:hover{
+      transition: 500ms ease;
+      transform: scale(1.1);
+      box-shadow: 12px 9px 50px #43cb83;
+    }
+  }
+  iframe{
+    margin-top: 50px;
+    float: right;
+    box-shadow: 0 0 80px #808080;
+    border-radius: 8px;
+    @include breakpoint(max-width 570px){
+      width: 100%;
+      height: 100%;
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+    @include  breakpoint(max-width 770px){
+        float: none;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 50px;
+      }
+  }
+}

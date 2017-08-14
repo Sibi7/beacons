@@ -1,0 +1,123 @@
+.our-advantages{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  &__left-figure{
+    position: absolute;
+    left: 0;
+    top: 360px;
+  }
+  &__right-figure{
+    top: 275px;
+    position: absolute;
+    right: 0;
+  }
+  h1{
+    margin-top: 90px;
+    margin-bottom: 70px;
+
+    font-size: 36px;
+    color: #43cb83;
+    font-weight:700;
+    span{
+      color: #282828;
+    }
+  }
+  .margin{
+    position: relative;
+    display: block;
+    float: left;
+    height: 38px;
+    width:100%;
+  }
+  &__item{
+    width: 325px;
+    height: 350px;
+    display: block;
+    position: relative;
+    margin:0 auto;
+    border: 1px solid #efefef ;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 500ms ease;
+    box-sizing: border-box;
+    @include breakpoint(max-width 568px){
+      width: 100%;
+      margin: 100px 0;
+      button{
+        width: 100%;
+      }
+    }
+    &:hover{
+      transition: 500ms ease;
+      box-shadow: 0 0 50px #cbcbcb;
+      z-index: 14;
+      background: #fff;
+      box-sizing: border-box;
+      height: 450px;
+      margin-bottom: -100px;
+
+    }
+    &:hover &-button{
+      display: block;
+      margin: 0 auto;
+      transition: 500ms ease;
+      &:hover{
+        transform: scale(1.1);
+        transition: 500ms ease;
+        box-shadow: 0 0 50px #aadac1;
+      }
+    }
+    &-button{
+      font-size: 18px;
+      font-weight: 700;
+      outline: none;
+      width: 240px;
+      height: 50px;
+      border: none;
+      background: #43cb83;
+      border-radius: 30px;
+      color: #fff;
+
+      display: none;
+    }
+    img{
+      margin-top: 35px;
+      height: 120px;
+      margin-bottom: 30px;
+    }
+    h1{
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    p{
+      margin-top: 25px;
+      margin-bottom: 30px;
+      padding: 0 30px;
+      @include breakpoint(max-width 568px){
+        padding: 0 10px;
+      }
+    }
+    .title-1{
+      color: #ff8f22;
+    }
+    .title-2{
+      color: #8cd866;
+    }
+    .title-3{
+      color: #ffc156;
+    }
+    .title-4{
+      color: #00cacd;
+    }
+    .title-5{
+      color: #f78400;
+    }
+    .title-6{
+      color: #4a3632;
+    }
+  }
+}

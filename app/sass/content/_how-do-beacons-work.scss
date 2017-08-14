@@ -1,0 +1,36 @@
+.top-banner{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  img{
+    size: 100%;
+  }
+}
+.how-do-beacons-work{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  h1{
+    color: #43cb83;
+    font-size: 36px;
+    font-weight:700;
+    margin-top: 75px;
+    span{
+      color: #282828;
+    }
+  }
+  &__img{
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    img{
+      object-fit: cover;
+      position: relative;
+      top:0;
+      width: 100%;
+    }
+  }
+}
